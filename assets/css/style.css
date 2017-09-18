@@ -30,3 +30,8 @@ p {
   text-align: center;
 }
 
+.crystal-image {
+  width: 200px;
+  height: inherit;
+}
+
