@@ -17,6 +17,7 @@ $(document).ready(function() {
       var images = $('<img>');
         images.attr('src', 'assets/images/crystal.png');
         images.attr('value', crystalOptions[i]);
+        images.addClass('crystal-image');
       $('#crystals').append(images)
     }
   }
