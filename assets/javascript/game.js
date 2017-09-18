@@ -12,5 +12,15 @@ $(document).ready(function() {
     console.log('Test of shuffle', crystalOptions);
   }
 
+  function creator() {
+    for (var i = 0; i < crystalOptions.length; i++) {
+      var images = $('<img>');
+        images.attr('src', 'assets/images/crystal.png');
+        images.attr('value', crystalOptions[i]);
+      $('#crystals').append(images)
+    }
+  }
+
   shuffle();
+  creator();
 })
