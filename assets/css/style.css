@@ -44,3 +44,13 @@ p {
   width: 20%;
   margin: 0 auto;
 }
+
+#user-number {
+  font-size: 16pt;
+  font-family: Helvetica;
+  color: #fff;
+  background-color: #444;
+  padding: 20px;
+  width: 20%;
+  margin: 0 auto;
+}
