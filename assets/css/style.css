@@ -1,17 +1,17 @@
 h1 {
-  font-family: Ariel;
+  font-family: 'Helvetica';
   font-size: 30pt;
   font-weight: bold;
 }
 
 h2 {
-  font-family: Ariel;
+  font-family: 'Helvetica';
   font-size: 20pt;
   font-weight: bold;
 }
 
 p {
-  font-family: Ariel;
+  font-family: 'Helvetica';
   font-size: 14pt;
 }
 
@@ -35,3 +35,12 @@ p {
   height: inherit;
 }
 
+#computer-number {
+  font-size: 16pt;
+  font-family: 'Helvetica';
+  color: #fff;
+  background-color: #333;
+  padding: 20px;
+  width: 20%;
+  margin: 0 auto;
+}
