@@ -8,9 +8,10 @@ $(document).ready(function() {
       var crystalNumber = Math.floor(Math.random() * (19-1))+1;
       var images = $('<img>');
         images.attr('src', 'assets/images/crystal.png');
-        images.attr('value', crystalNumber);
+        images.attr('data-value', crystalNumber);
         images.addClass('crystal-image');
       $('#crystals').append(images)
+      console.log(images.attr('data-value'))
     }
 
     var compNumber = Math.floor(Math.random() * (120-19)) + 19;
@@ -19,8 +20,9 @@ $(document).ready(function() {
   }
 
   $('#crystals').on('click', function() {
-    userNumber += $(this).value;
-    $('#user-number').text(userNumber)
+    // userNumber += $(this).value;
+    // $('#user-number').text(userNumber)
+    
   })
 
   function clear() {
