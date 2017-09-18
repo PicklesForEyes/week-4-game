@@ -14,3 +14,11 @@ p {
   font-family: Ariel;
   font-size: 14pt;
 }
+
+.banner-top {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #5e5e5e;
+  color: #fff;
+}
+
