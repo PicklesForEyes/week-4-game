@@ -4,11 +4,22 @@ $(document).ready(function() {
 
   var userNumber = 0;
   function createGame() {
+    var numberArr = [];
     for (var i = 0; i < 4; i++) {
       var crystalNumber = Math.floor(Math.random() * (12-1))+1;
+      // while (numberArr.indexOf(crystalNumber) === -1){
+      //   numberArr.push();
+      // }
+      // debugger;
+      var j = false;
+      while (numberArr.includes(crystalNumber)){
+        crystalNumber = Math.floor(Math.random() * (12-1))+1;
+      }
+      numberArr.push(crystalNumber);
+      // console.log(crystalNumber);
       var images = $('<img>');
         images.attr('src', 'assets/images/crystal.png');
-        images.attr('data-value', crystalNumber);
+        images.attr('data-value', numberArr[i]);
         images.addClass('crystal-image');
       $('#crystals').append(images)
       console.log(images.attr('data-value'))
@@ -20,9 +31,9 @@ $(document).ready(function() {
   }
 
   $('#crystals').on('click', function() {
-    userNumber += $(this).attr('data-value');
-    parseInt(userNumber);
-    console.log(userNumber);
+    // userNumber += $(this).attr('data-value');
+    // parseInt(userNumber);
+    // console.log(userNumber);
     
   })
 
