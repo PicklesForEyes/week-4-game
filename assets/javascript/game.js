@@ -5,7 +5,7 @@ $(document).ready(function() {
   var userNumber = 0;
   function createGame() {
     for (var i = 0; i < 4; i++) {
-      var crystalNumber = Math.floor(Math.random() * (19-1))+1;
+      var crystalNumber = Math.floor(Math.random() * (12-1))+1;
       var images = $('<img>');
         images.attr('src', 'assets/images/crystal.png');
         images.attr('data-value', crystalNumber);
@@ -20,8 +20,9 @@ $(document).ready(function() {
   }
 
   $('#crystals').on('click', function() {
-    // userNumber += $(this).value;
-    // $('#user-number').text(userNumber)
+    userNumber += $(this).attr('data-value');
+    parseInt(userNumber);
+    console.log(userNumber);
     
   })
 
