@@ -7,9 +7,6 @@ $(document).ready(function() {
     var numberArr = [];
     for (var i = 0; i < 4; i++) {
       var crystalNumber = Math.floor(Math.random() * (12-1))+1;
-      // while (numberArr.indexOf(crystalNumber) === -1){
-      //   numberArr.push();
-      // }
       // debugger;
       var j = false;
       while (numberArr.includes(crystalNumber)){
@@ -33,7 +30,7 @@ $(document).ready(function() {
   $('#crystals').on('click', function() {
     // userNumber += $(this).attr('data-value');
     // parseInt(userNumber);
-    // console.log(userNumber);
+    console.log($(this).attr('data-value'));
     
   })
 
