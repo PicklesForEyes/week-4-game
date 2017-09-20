@@ -27,14 +27,14 @@ $(document).ready(function() {
     $('#computer-number').text(compNumber);
   }
 
-  $('#crystals').on('click', function() {
-    // userNumber += $(this).attr('data-value');
-    // parseInt(userNumber);
-    console.log($(this).attr('data-value'));
-    
-  })
-
   $('#reset').on('click', clear);
+
+  $('#crystals').on('click', addition);
+
+  function addition() {
+    userNumber += $(this);
+    $('#user-number').text(userNumber);
+  }
 
   function clear() {
     $('#computer-number').empty();
