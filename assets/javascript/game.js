@@ -34,6 +34,8 @@ $(document).ready(function() {
     
   })
 
+  $('#reset').on('click', clear);
+
   function clear() {
     $('#computer-number').empty();
     $('#user-number').empty();
