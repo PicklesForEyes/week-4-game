@@ -3,6 +3,7 @@ $(document).ready(function() {
   // !!number should be randomly generated between 19-120
 
   var userNumber = 0;
+  var compNumber = 0;
   function createGame() {
     var numberArr = [];
     for (var i = 0; i < 4; i++) {
@@ -22,7 +23,7 @@ $(document).ready(function() {
       console.log(images.attr('data-value'));
     }
 
-    var compNumber = Math.floor(Math.random() * (120-19)) + 19;
+    compNumber = Math.floor(Math.random() * (120-19)) + 19;
     // console.log(compNumber);
     $('#computer-number').text(compNumber);
   }
@@ -32,9 +33,16 @@ $(document).ready(function() {
   $(document).on('click', '.crystal-image', function() {
     userNumber += parseInt($(this).attr('data-value'));
     $('#user-number').text(userNumber);
+    check(userNumber);
   })
 
-  
+  function check(num) {
+    if (num === compNumber){
+      console.log('yay');
+    } else if (num > compNumber){
+      console.log('awwe');
+    }
+  }
 
   function clear() {
     userNumber = 0;
