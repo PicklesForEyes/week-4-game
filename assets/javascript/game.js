@@ -55,7 +55,7 @@ $(document).ready(function() {
   function clear() {
     userNumber = 0;
     $('#computer-number').empty();
-    $('#user-number').empty();
+    $('#user-number').text('0');
     $('#crystals').empty();
     createGame();
   }
