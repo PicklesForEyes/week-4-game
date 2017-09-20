@@ -30,17 +30,11 @@ $(document).ready(function() {
   $('#reset').on('click', clear);
 
   $(document).on('click', '.crystal-image', function() {
-    $('#user-number').text($(this).attr('data-value'));
+    userNumber += parseInt($(this).attr('data-value'));
+    $('#user-number').text(userNumber);
   })
 
-  // $('.click-me').on('click', function() {
-  //   console.log('I get here')
-  // });
-
-  // function addition() {
-  //   userNumber += $('.crystal-image').attr('data-value')
-  //   $('#user-number').text(userNumber);
-  // }
+  
 
   function clear() {
     userNumber = 0;
