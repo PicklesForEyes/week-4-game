@@ -33,6 +33,7 @@ p {
 .crystal-image {
   width: 200px;
   height: inherit;
+  padding: 10px;
 }
 
 #computer-number {
@@ -52,5 +53,12 @@ p {
   background-color: #444;
   padding: 20px;
   width: 20%;
+  margin: 0 auto;
+}
+
+#win-lose {
+  font-size: 16pt;
+  font-family: 'Helvetica';
+  padding: 20px;
   margin: 0 auto;
 }
