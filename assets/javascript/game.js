@@ -4,6 +4,8 @@ $(document).ready(function() {
 
   var userNumber = 0;
   var compNumber = 0;
+  var wins = 0;
+  var losses = 0;
   function createGame() {
     var numberArr = [];
     for (var i = 0; i < 4; i++) {
@@ -39,9 +41,13 @@ $(document).ready(function() {
   function check(num) {
     if (num === compNumber){
       $('#win-lose').text('Winner Winner Chicken Dinner');
+      wins++;
+      $('#win').text('Wins: ' + wins);
       clear();
     } else if (num > compNumber){
       $('#win-lose').text('Awe, you lost');
+      losses++;
+      $('#lose').text('Losses: ' + losses);
       clear();
     }
   }
