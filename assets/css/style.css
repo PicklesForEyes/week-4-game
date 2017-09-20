@@ -78,3 +78,11 @@ p {
   background-color: #303d74;
   color: #fff;
 }
+
+.game-header {
+  padding: 10px;
+}
+
+.instructions {
+  padding: 10px;
+}
