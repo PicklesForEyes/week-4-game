@@ -18,7 +18,7 @@ p {
 .container {
   width: 1024px;
   margin: 0 auto;
-  background-color: #adadad;
+  background-color: #3993ac;
   text-align: center;
   height: 100vh;
 }
@@ -26,7 +26,7 @@ p {
 .banner-top {
   margin: 0 auto;
   padding: 20px;
-  background-color: #5e5e5e;
+  background-color: #11272d;
   color: #fff;
   text-align: center;
 }
@@ -41,7 +41,7 @@ p {
   font-size: 16pt;
   font-family: 'Helvetica';
   color: #fff;
-  background-color: #333;
+  background-color: #1c414c;
   padding: 20px;
   width: 20%;
   margin: 0 auto;
@@ -51,7 +51,7 @@ p {
   font-size: 16pt;
   font-family: Helvetica;
   color: #fff;
-  background-color: #444;
+  background-color: #2f7488;
   padding: 20px;
   width: 20%;
   margin: 0 auto;
@@ -67,4 +67,14 @@ p {
 #reset {
   padding: 10px;
   margin: 20px;
+}
+
+.result-counter {
+  font-size: 14pt;
+  font-family: 'Helvetica';
+  padding: 20px;
+  margin: 0 auto;
+  width: 20%;
+  background-color: #303d74;
+  color: #fff;
 }
