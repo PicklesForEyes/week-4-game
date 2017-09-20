@@ -38,9 +38,11 @@ $(document).ready(function() {
 
   function check(num) {
     if (num === compNumber){
-      console.log('yay');
+      $('#win-lose').text('Winner Winner Chicken Dinner');
+      clear();
     } else if (num > compNumber){
-      console.log('awwe');
+      $('#win-lose').text('Awe, you lost');
+      clear();
     }
   }
 
