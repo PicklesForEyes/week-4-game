@@ -20,6 +20,7 @@ p {
   margin: 0 auto;
   background-color: #adadad;
   text-align: center;
+  height: 100vh;
 }
 
 .banner-top {
@@ -61,4 +62,9 @@ p {
   font-family: 'Helvetica';
   padding: 20px;
   margin: 0 auto;
+}
+
+#reset {
+  padding: 10px;
+  margin: 20px;
 }
